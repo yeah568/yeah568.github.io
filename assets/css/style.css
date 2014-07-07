@@ -271,8 +271,8 @@ nav > .container {
   margin-top: 20px;
 }
 .listingwrap {
-  display: flex;
-  flex-direction: column;
+/*  display: flex;
+  flex-direction: column;*/
 }
 section,
 footer {
@@ -297,25 +297,25 @@ footer .container {
   padding: 20px 35px 20px 35px;
 }
 .project {
-  flex: 1;
+/*  flex: 1;
   min-height: 150px;
   display: flex;
   flex-direction: column;
-}
+*/}
 .project a {
-  flex: 1;
+/*  flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;*/
 }
 .project .container {
   transition: 0.1s;
   -o-transtion: 0.1s;
   -moz-transition: 0.1s;
   -webkit-transition: 0.1s;
-  flex: 1;
+ /* flex: 1;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-content: center;*/
 }
 @media only screen and (min-width: 768px) {
   .project .container {
