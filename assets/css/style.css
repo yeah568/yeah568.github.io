@@ -421,6 +421,12 @@ footer .container {
   height: 20%;
   top: 40%;
 }
+.tech .techbadge:first-of-type {
+  margin-left: 0;
+}
+.tech .techbadge {
+  margin-left: 20px;
+}
 .blue1 {
   background-color: #55b6d0;
 }
