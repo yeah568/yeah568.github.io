@@ -366,6 +366,12 @@ footer .container {
 .project .container .fullwidth {
   width: 100%;
 }
+.project #projectlink a {
+  margin-left: 20px;
+}
+.project #projectlink a:first-of-type {
+  margin-left: 0;
+}
 .listingwrap .project .container:hover {
   -webkit-transform: scale(1.007);
   -moz-transform: scale(1.007);
