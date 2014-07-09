@@ -458,6 +458,14 @@ footer .container {
 footer {
   color: #ddd;
 }
+.footer-right {
+  float: none;
+}
+@media (min-width: 768px) { 
+  .footer-right {
+    float: right;
+  }
+}
 .videocontrol {
   background-image: none !important;
 }
@@ -502,4 +510,52 @@ footer {
 .gplus:hover,
 .gplus:active {
   background: #cf3624;
+}
+
+.linkedin {
+  background: #0977B4;
+}
+.linkedin:hover,
+.linkedin:active {
+  background: #076394;
+}
+
+.foursquare {
+  background: #1DB0EC;
+}
+.foursquare:hover,
+.foursquare:active {
+  background: #129BD6;
+}
+
+.tumblr {
+  background: #35465c;
+}
+.tumblr:hover,
+.tumblr:active {
+  background: #283546;
+}
+
+.reddit {
+  background: #336699;
+}
+.reddit:hover,
+.reddit:active {
+  background: #2B5580;
+}
+
+.flickr {
+  background: #ff0084;
+}
+.flickr:hover,
+.flickr:active {
+  background: #DD0074;
+}
+
+.steam {
+  background: #1F1F1F;
+}
+.steam:hover,
+.steam:active {
+  background: #0E0E0E;
 }
