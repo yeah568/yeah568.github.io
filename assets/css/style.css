@@ -270,9 +270,13 @@ nav > .container {
 .about h2 {
   margin-top: 20px;
 }
-.listingwrap {
-/*  display: flex;
-  flex-direction: column;*/
+.contactcontainer {
+  padding: 0;
+}
+.contactbutton {
+  padding: 30px;
+  font-size: 1.2rem;
+  text-align: center;
 }
 section,
 footer {
@@ -296,26 +300,11 @@ footer .container {
   max-width: 100%;
   padding: 20px 35px 20px 35px;
 }
-.project {
-/*  flex: 1;
-  min-height: 150px;
-  display: flex;
-  flex-direction: column;
-*/}
-.project a {
-/*  flex: 1;
-  display: flex;
-  flex-direction: column;*/
-}
 .project .container {
   transition: 0.1s;
   -o-transtion: 0.1s;
   -moz-transition: 0.1s;
   -webkit-transition: 0.1s;
- /* flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-content: center;*/
 }
 @media only screen and (min-width: 768px) {
   .project .container {
@@ -471,4 +460,46 @@ footer {
 }
 .videocontrol {
   background-image: none !important;
+}
+
+/* social colours */
+
+.github {
+  background: #151515;
+}
+.github:hover,
+.github:active {
+  background: #040404;
+}
+
+.twitter {
+  background: #55acee;
+}
+.twitter:hover,
+.twitter:active {
+  background: #359ceb;
+}
+
+.facebook {
+  background: #3b5998;
+}
+.facebook:hover,
+.facebook:active {
+  background: #314a7e;  
+}
+
+.youtube {
+  background: #c4302b;
+}
+.youtube:hover,
+.youtube:active {
+  background: #a72925;
+}
+
+.gplus {
+  background: #dd4b39;
+}
+.gplus:hover,
+.gplus:active {
+  background: #cf3624;
 }
