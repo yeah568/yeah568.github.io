@@ -559,3 +559,19 @@ footer {
 .steam:active {
   background: #181818;
 }
+
+.skype {
+  background: #00AFF0;
+}
+.skype:hover,
+.skype:active {
+  background: #0096CE;
+}
+
+.email {
+  background: #0089b3;
+}
+.email:hover,
+.email:active {
+  background: #007091;
+}
