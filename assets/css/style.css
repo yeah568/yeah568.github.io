@@ -60,6 +60,17 @@
     background-image: url("/assets/img/ubcesports/ubcesports.png");
   }
 }
+.tracks {
+  background-color: #1d9cb5;
+}
+.tracks .container {
+  background-color: #2aace3;
+}
+@media only screen and (min-width: 768px) {
+  .tracks .container {
+    background-image: url("/assets/img/tracks/tracks.png");
+  }
+}
 #pony {
   position: fixed;
   background-image: url("/assets/img/dewdrop-flying.png");
@@ -461,7 +472,7 @@ footer {
 .footer-right {
   float: none;
 }
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .footer-right {
     float: right;
   }
@@ -493,7 +504,7 @@ footer {
 }
 .facebook:hover,
 .facebook:active {
-  background: #314a7e;  
+  background: #314a7e;
 }
 
 .youtube {
