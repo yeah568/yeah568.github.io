@@ -71,6 +71,17 @@
     background-image: url("/assets/img/tracks/tracks.png");
   }
 }
+.rollin {
+  background-color: #067da1;
+}
+.rollin .container {
+  background-color: #0089b3;
+}
+@media only screen and (min-width: 768px) {
+  .rollin .container {
+    background-image: url("/assets/img/rollin/rollin.png");
+  }
+}
 #pony {
   position: fixed;
   background-image: url("/assets/img/dewdrop-flying.png");
@@ -301,10 +312,8 @@ footer h2 {
 }
 section p,
 footer p {
-  margin-bottom: 10px;
   font-size: 0.8rem;
   font-weight: 200;
-  margin: 0;
 }
 section .container,
 footer .container {
