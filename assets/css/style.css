@@ -126,6 +126,7 @@ h2 {
 }
 .navbar-brand {
   font-size: 1.2rem;
+  white-space: nowrap;
 }
 .navbar-custom {
   background-color: #333;
