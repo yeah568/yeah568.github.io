@@ -436,6 +436,11 @@ footer .container {
   height: 20%;
   top: 40%;
 }
+.badgewrap {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
 .tech .techbadge:first-of-type {
   margin-left: 0;
 }
