@@ -266,6 +266,7 @@ nav > .container {
 }
 .about h2 {
   margin-top: 20px;
+  margin-bottom: 0;
 }
 .contact .container,
 .about .container {
