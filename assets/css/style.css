@@ -4,6 +4,7 @@
 }
 .project .container {
   background-color: #333;
+  font-size: 0.8rem;
 }
 .bronycan {
   background-color: #dd1921;
@@ -14,7 +15,7 @@
 }
 @media only screen and (min-width: 768px) {
   .bronycan .container {
-    background-image: url("/assets/img/bronycan/bronycan.png");
+    background-image: url("/assets/img/sites/bronycan/bronycan.png");
   }
 }
 .gvssai {
@@ -26,7 +27,7 @@
 }
 @media only screen and (min-width: 768px) {
   .gvssai .container {
-    background-image: url("/assets/img/gvssai/gvssai.png");
+    background-image: url("/assets/img/sites/gvssai/gvssai.png");
   }
 }
 .restart {
@@ -38,7 +39,7 @@
 }
 @media only screen and (min-width: 768px) {
   .restart .container {
-    background-image: url("/assets/img/restart/restart.png");
+    background-image: url("/assets/img/sites/restart/restart.png");
   }
 }
 .jory {
@@ -57,7 +58,7 @@
 }
 @media only screen and (min-width: 768px) {
   .ubcesports .container {
-    background-image: url("/assets/img/ubcesports/ubcesports.png");
+    background-image: url("/assets/img/videos/ubcesports/ubcesports.png");
   }
 }
 .tracks {
@@ -68,7 +69,7 @@
 }
 @media only screen and (min-width: 768px) {
   .tracks .container {
-    background-image: url("/assets/img/tracks/tracks.png");
+    background-image: url("/assets/img/videos/tracks/tracks.png");
   }
 }
 .rollin {
@@ -79,7 +80,18 @@
 }
 @media only screen and (min-width: 768px) {
   .rollin .container {
-    background-image: url("/assets/img/rollin/rollin.png");
+    background-image: url("/assets/img/code/rollin/rollin.png");
+  }
+}
+.cpsc121ta {
+  background-color: #091C37;
+}
+.cpsc121ta .container {
+  background-color: #0C2244;
+}
+@media only screen and (min-width: 768px) {
+  .cpsc121ta .container {
+    background-image: url("/assets/img/stuff/ubc/ubc.png");
   }
 }
 #pony {
@@ -96,6 +108,7 @@ html {
   font-size: 20px;
   height: 100%;
   min-height: 100%;
+  overflow-y: scroll;
 }
 body {
   font-family: "Titillium Web", sans-serif;
@@ -133,45 +146,6 @@ h2 {
   border-color: #0089b3;
   font-size: 1.05rem;
   border-width: 0 0 5px;
-/*
-  .navbar-nav
-    > .open > a
-      &,
-      &:hover,
-      &:focus
-        background-color $navbar-custom-link-active-bg
-        color $navbar-custom-link-active-color
-
-    @media (max-width: $grid-float-breakpoint-max)
-      // Dropdowns get custom display
-      .open .dropdown-menu
-        > .dropdown-header
-          border-color $navbar-custom-border
-
-        .divider
-          background-color $navbar-custom-border
-
-        > li > a
-          color $navbar-custom-link-color
-          &:hover,
-          &:focus
-            color $navbar-custom-link-hover-color
-            background-color $navbar-custom-link-hover-bg
-
-        > .active > a
-          &,
-          &:hover,
-          &:focus
-            color $navbar-custom-link-active-color
-            background-color $navbar-custom-link-active-bg
-
-        > .disabled > a
-          &,
-          &:hover,
-          &:focus
-            color $navbar-custom-link-disabled-color
-            background-color $navbar-custom-link-disabled-bg
-  */
 }
 .navbar-custom .navbar-brand {
   color: #fff;
@@ -293,6 +267,13 @@ nav > .container {
 .about h2 {
   margin-top: 20px;
 }
+.contact .container,
+.about .container {
+  padding: 30px 35px 40px 35px;
+}
+.contact h1 {
+  margin-top: 10px;
+}
 .contactcontainer {
   padding: 0;
 }
@@ -320,6 +301,9 @@ section .container,
 footer .container {
   max-width: 100%;
   padding: 20px 35px 20px 35px;
+}
+section .categoryheader {
+  padding-bottom: 40px;
 }
 .project .container {
   transition: 0.1s;
@@ -417,6 +401,9 @@ footer .container {
 .carousel-inner {
   padding: 0;
   margin-bottom: 0;
+}
+.item img {
+  width: 100%;
 }
 .carousel-indicators {
   bottom: 0px;
