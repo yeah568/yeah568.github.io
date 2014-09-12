@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>James Liu // BronyCAN 2014</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Titillium+Web">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/konami.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+    var konami = new Konami(function() {
+        $('#pony').show();
+        var startl = -463;
+        var starth = -353;
+        var width = $(window).width() + 230;
+        var height = $(window).height();
+        $('#pony').animate({left: width, top: height}, 2000, "swing", function() {
+            $('#pony').hide();
+            $('#pony').animate({left: startl, top: starth}, 0);
+        });
+      });
+    </script>
+</head>
+<body>
+	<div id="pony"></div>
+	<nav class="navbar navbar-custom navbar-static-top" role="navigation">
+		<div class="container">
+    <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#main-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">James Liu</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-right" id="main-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="/code">code</a>
+            </li>
+            <li>
+                <a href="/videos">videos</a>
+            </li>
+            <li>
+                <a href="/sites">sites</a>
+            </li>
+            <li>
+                <a href="/stuff">stuff</a>
+            </li>
+            <li>
+                <a href="/about">about</a>
+            </li>
+            <li>
+                <a href="/contact">contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
+	</nav>
+
+
+<section class="project bronycan">
+	<div class="container">
+		<div class="projectleft">
+			<div id="breadcrumbs">/stuff/bronycan</div>
+			<div class="projectname para">BronyCAN 2014</div>
+			<div class="para" id="projectdesc">Pre and at con IT services.</div>
+			
+			<div id="projectlink">
+				<a href="http://bronycan.ca" target="_blank">bronycan.ca</a>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+<section class="blue1" id="projectgallery">
+	<div class="container">
+		<div data-ride="carousel" data-interval="false" class="carousel slide" id="gallerycarousel">
+			<ul class="carousel-indicators">
+				
+				
+				<li data-target="#gallerycarousel" data-slide-to="0" class="active"></li>
+				
+				
+			</ul>
+			<ul class="carousel-inner">
+				
+				
+				<div class="item active">
+					<img src="/assets/img/stuff/bronycan/1.png" alt="text" />
+					<div class="carousel-caption">At con pre-pre-reg</div>
+				</div>
+				
+				
+			</ul>
+			<a href="#gallerycarousel" data-slide="prev" class="left carousel-control">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a href="#gallerycarousel" data-slide="next" class="right carousel-control">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+	</div>
+</section>
+
+<section class="blue2">
+	<div class="container">
+		<h2>the details</h2>
+		<p>As part of the IT team in the BronyCAN staff, I helped with pre-con and at-con IT services, including the provisioning of clients, and configuration of the at-con registration server.</p>
+
+	</div>
+</section>
+
+
+<section class="blue4">
+	<div class="container">
+		<h2>more</h2>
+		
+		<a href="/sites/bronycan">Sites - BronyCAN</a>
+		
+	</div>
+</section>
+
+<footer>
+	<div class="container">
+		<div class="col-xs-12 col-sm-6">
+			<div>&#169 2014 James Liu</div>
+			<div>All other trademarks are the property of their respective owners.</div>
+		</div>
+		<div class="col-xs-12 col-sm-6">
+			<span class="footer-right">Built in Vancouver with Bootstrap, Jekyll and love.</span>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
