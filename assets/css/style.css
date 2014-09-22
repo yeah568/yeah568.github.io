@@ -285,6 +285,12 @@ nav > .container {
   font-size: 1.2rem;
   text-align: center;
 }
+.fourohfour .container {
+  padding: 20px 35px 40px 30px;
+}
+.fourohfour a {
+  color: #0089b3;
+}
 section,
 footer {
   margin: 0;
