@@ -127,6 +127,22 @@ a:focus {
   color: #fff;
   text-decoration: none;
 }
+.darklink {
+  color: #bbb;
+}
+.darklink:hover,
+.darklink:focus {
+  color: #bbb;
+  text-decoration: none;
+}
+p a {
+  color: #bbb;
+}
+p a:hover,
+p a:focus {
+  color: #bbb;
+  text-decoration: none;
+}
 h1.heading {
   margin-top: 20px;
   margin-bottom: 20px;
