@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    <title>James Liu // BronyCAN 2014</title>
+    <title>James Liu // SimpleBus</title>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Titillium+Web">
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -11,16 +11,21 @@
     <script type="text/javascript" src="/assets/js/konami.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript">
+
     var konami = new Konami(function() {
-        $('#pony').show();
-        var startl = -463;
+        $('#pony').addClass("ponypony");
+
+        $('#pony').addEventListener("animationend", function() {
+            $('#pony').removeClass("ponypony");
+        }, false);
+        /*var startl = -463;
         var starth = -353;
         var width = $(window).width() + 230;
         var height = $(window).height();
         $('#pony').animate({left: width, top: height}, 2000, "swing", function() {
             $('#pony').hide();
             $('#pony').animate({left: startl, top: starth}, 0);
-        });
+        });*/
       });
     </script>
 </head>
@@ -63,15 +68,21 @@
 	</nav>
 
 
-<section class="project bronycan">
+<section class="project simplebus">
 	<div class="container">
 		<div class="projectleft">
-			<div id="breadcrumbs">/sites/bronycan</div>
-			<div class="projectname para">BronyCAN 2014</div>
-			<div class="para" id="projectdesc">A complete revamp of the BronyCAN site for 2014, serving as the gateway for attendees.</div>
+			<div id="breadcrumbs">/code/simplebus</div>
+			<div class="projectname para">SimpleBus</div>
+			<div class="para" id="projectdesc">When the buses you care about are arriving. That's it.</div>
 			
 			<div id="projectlink">
-				<a href="http://bronycan.ca" target="_blank">bronycan.ca</a>
+				
+				<a href="http://jamesliu.ca/simplebus" target="_blank">SimpleBus >></a>
+				
+				<a href="https://github.com/yeah568/simplebus" target="_blank">Client-side code on GitHub >></a>
+				
+				<a href="https://github.com/yeah568/simplebus-server" target="_blank">Server code on GitHub >></a>
+				
 			</div>
 			
 		</div>
@@ -87,24 +98,13 @@
 				<li data-target="#gallerycarousel" data-slide-to="0" class="active"></li>
 				
 				
-				
-				<li data-target="#gallerycarousel" data-slide-to="1"></li>
-				
-				
 			</ul>
 			<ul class="carousel-inner">
 				
 				
 				<div class="item active">
-					<img src="/assets/img/sites/bronycan/1.png" alt="text" />
-					<div class="carousel-caption">The main page.</div>
-				</div>
-				
-				
-				
-				<div class="item">
-					<img src="/assets/img/sites/bronycan/2.png" alt="text" />
-					<div class="carousel-caption">A custom page that takes a story arc from BronyCAN's official Tumblr using the Tumblr API, and creates an easy to use reader.</div>
+					<img src="/assets/img/code/simplebus/1.png" alt="text" />
+					<div class="carousel-caption">The main SimpleBus interface.</div>
 				</div>
 				
 				
@@ -122,21 +122,22 @@
 <section class="blue2">
 	<div class="container">
 		<h2>the details</h2>
-		<p>When BronyCAN unveiled their new theme for the 2014 convention, they needed a brand new website to go along with it, to replace the manually update HTML files (!) that were in place before. Developed over the course of about 3 months on and off between school, the site was officially launched in early January of 2014.</p>
+		<p>Living in Metro Vancouver, I rely on Translink's services to get me around. While various mobile apps and the Next Bus service exist, they all either require you to enter a stop number every time, or show all the buses that are nearby. I always wanted something that just showed me the buses at the stops that I cared about, so I made it. SimpleBus lets you get when the next bus leaves at a glance, for all your favourite buses.</p>
 
-<p>Powered by WordPress, with a custom theme based on a heavily customized version of Bootstrap, this site serves as the gateway for attendees to find out more about the convention, purchase tickets, and book hotel rooms. It's fully responsive, and has a custom built "Comic" page, which allows readers to view the comic series posted on the <a href="http://ask-bronycan.tumblr.com">Ask BronyCAN Tumblr</a> in an easy to use viewer, based on their screen size.</p>
+<p>Using AngularJS, I developed the front end to use HTML5 Local Storage to save the user's settings, as well as jQuery UI to enable some more interactivity with the page.</p>
+
+<p>The server is a very simple server written in Python with Flask. Essentially, it acts as a proxy for the client - Translink's API doesn't have the correct CORS headers to allow for a client to use it dirThus, the server takes the Translink API, and applies the correct headers before passing it to the client. Currently, the main SimpleBus server is hosted on Heroku, however, it can be easily hosted anywhere else that supports Python.</p>
 
 	</div>
 </section>
-
 <section class="blue3">
 	<div class="container tech">
 		<h2>the tech</h2>
 		<div class="badgewrap">
 			
 	
-	<a href="http://wordpress.org" target="_blank" class="techbadge">
-		<img src="/assets/img/tech/wordpress.png" data-toggle="tooltip" data-placement="bottom" title="Wordpress" />
+	<a href="https://angularjs.org/" target="_blank" class="techbadge">
+		<img src="/assets/img/tech/angular.png" data-toggle="tooltip" data-placement="bottom" title="AngularJS" />
 	</a>
 	
 	
@@ -148,15 +149,50 @@
 	
 
 	
-	<a href="http://getbootstrap.com" target="_blank" class="techbadge">
-		<img src="/assets/img/tech/bootstrap.png" data-toggle="tooltip" data-placement="bottom" title="Bootstrap 3" />
+	<a href="http://flask.pocoo.org/" target="_blank" class="techbadge">
+		<img src="/assets/img/tech/flask.png" data-toggle="tooltip" data-placement="bottom" title="Flask" />
 	</a>
 	
 	
 
 	
-	<a href="http://foundation.zurb.com/" target="_blank" class="techbadge">
-		<img src="/assets/img/tech/foundation.png" data-toggle="tooltip" data-placement="bottom" title="Zurb Foundation 5" />
+	<a href="http://jquery.com/" target="_blank" class="techbadge">
+		<img src="/assets/img/tech/jquery.png" data-toggle="tooltip" data-placement="bottom" title="jQuery" />
+	</a>
+	
+	
+
+	
+	<a href="http://jqueryui.com/" target="_blank" class="techbadge">
+		<img src="/assets/img/tech/jqueryui.png" data-toggle="tooltip" data-placement="bottom" title="jQuery UI" />
+	</a>
+	
+	
+
+	
+	<a href="https://www.heroku.com/" target="_blank" class="techbadge">
+		<img src="/assets/img/tech/heroku.png" data-toggle="tooltip" data-placement="bottom" title="Heroku" />
+	</a>
+	
+	
+
+	
+	<a href="http://gruntjs.com/" target="_blank" class="techbadge">
+		<img src="/assets/img/tech/grunt.png" data-toggle="tooltip" data-placement="bottom" title="Grunt" />
+	</a>
+	
+	
+
+	
+	<a href="http://bower.io/" target="_blank" class="techbadge">
+		<img src="/assets/img/tech/bower.png" data-toggle="tooltip" data-placement="bottom" title="Bower" />
+	</a>
+	
+	
+
+	
+	<a href="http://yeoman.io/" target="_blank" class="techbadge">
+		<img src="/assets/img/tech/yeoman.png" data-toggle="tooltip" data-placement="bottom" title="Yeoman" />
 	</a>
 	
 	
@@ -169,15 +205,8 @@
 	
 
 	
-	<a href="https://bitbucket.org/" target="_blank" class="techbadge">
-		<img src="/assets/img/tech/bitbucket.png" data-toggle="tooltip" data-placement="bottom" title="Bitbucket" />
-	</a>
-	
-	
-
-	
-	<a href="https://www.tumblr.com" target="_blank" class="techbadge">
-		<img src="/assets/img/tech/tumblr.png" data-toggle="tooltip" data-placement="bottom" title="Tumblr API" />
+	<a href="https://github.com/" target="_blank" class="techbadge">
+		<img src="/assets/img/tech/github.png" data-toggle="tooltip" data-placement="bottom" title="Github" />
 	</a>
 	
 	
@@ -189,20 +218,7 @@
 	
 	
 
-	
-	
-
 		</div>
-	</div>
-</section>
-
-
-<section class="blue4">
-	<div class="container">
-		<h2>more</h2>
-		
-		<a href="/stuff/bronycan">Stuff - BronyCAN</a>
-		
 	</div>
 </section>
 

@@ -83,6 +83,17 @@
     background-image: url("/assets/img/code/rollin/rollin.png");
   }
 }
+.simplebus {
+  background-color: #0589A0;
+}
+.simplebus .container {
+  background-color: #0098B3;
+}
+@media only screen and (min-width: 768px) {
+  .simplebus .container {
+    background-image: url("/assets/img/code/simplebus/simplebus.png");
+  }
+}
 .cpsc121ta {
   background-color: #091C37;
 }
@@ -128,19 +139,19 @@ a:focus {
   text-decoration: none;
 }
 .darklink {
-  color: #bbb;
+  color: #7f7f7f;
 }
 .darklink:hover,
 .darklink:focus {
-  color: #bbb;
+  color: #7f7f7f;
   text-decoration: none;
 }
 p a {
-  color: #bbb;
+  color: #7f7f7f;
 }
 p a:hover,
 p a:focus {
-  color: #bbb;
+  color: #7f7f7f;
   text-decoration: none;
 }
 h1.heading {
@@ -566,12 +577,12 @@ footer {
   background: #129BD6;
 }
 
-.tumblr {
-  background: #35465c;
+.lastfm {
+  background: #D51007;
 }
-.tumblr:hover,
-.tumblr:active {
-  background: #283546;
+.lastfm:hover,
+.lastfm:active {
+  background: #B60E05;
 }
 
 .reddit {
