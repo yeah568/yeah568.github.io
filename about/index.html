@@ -10,17 +10,19 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/assets/js/konami.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript">
+
     var konami = new Konami(function() {
-        $('#pony').show();
         var startl = -463;
         var starth = -353;
         var width = $(window).width() + 230;
         var height = $(window).height();
-        $('#pony').animate({left: width, top: height}, 2000, "swing", function() {
+        $('#pony').show();
+        $('#pony').velocity({left: width, top: height}, 2000, "swing", function() {
             $('#pony').hide();
-            $('#pony').animate({left: startl, top: starth}, 0);
+            $('#pony').velocity({left: startl, top: starth}, 0);
         });
       });
     </script>
