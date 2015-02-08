@@ -514,6 +514,9 @@ footer {
     float: right;
   }
 }
+.footer-cols {
+  padding: 0;
+}
 .videocontrol {
   background-image: none !important;
 }
