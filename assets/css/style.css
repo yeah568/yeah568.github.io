@@ -138,19 +138,19 @@ a:focus {
   text-decoration: none;
 }
 .darklink {
-  color: #7f7f7f;
+  color: #0089b3;
 }
 .darklink:hover,
 .darklink:focus {
-  color: #7f7f7f;
+  color: #0089b3;
   text-decoration: none;
 }
 p a {
-  color: #7f7f7f;
+  color: #0089b3;
 }
 p a:hover,
 p a:focus {
-  color: #7f7f7f;
+  color: #0089b3;
   text-decoration: none;
 }
 h1.heading {
