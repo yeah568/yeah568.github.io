@@ -247,22 +247,22 @@ nav > .container {
 }
 @media only screen and (max-width: 640px) {
   .fullimage {
-    background: transparent url("/assets/img/index/640.jpg") center center no-repeat;
+    background: transparent url("/assets/img/index/b640.jpg") center center no-repeat;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1200px) {
   .fullimage {
-    background: transparent url("/assets/img/index/1200.jpg") center center no-repeat;
+    background: transparent url("/assets/img/index/b1200.jpg") center center no-repeat;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1920px) {
   .fullimage {
-    background: transparent url("/assets/img/index/1920.jpg") center center no-repeat;
+    background: transparent url("/assets/img/index/b1920.jpg") center center no-repeat;
   }
 }
 @media only screen and (min-width: 1921px) {
   .fullimage {
-    background: transparent url("/assets/img/index/3840.jpg") center center no-repeat;
+    background: transparent url("/assets/img/index/b3840.jpg") center center no-repeat;
   }
 }
 .indexcontent {
