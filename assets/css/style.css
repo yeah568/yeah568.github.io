@@ -1,3 +1,49 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+}
+.indexprojects .container {
+  padding-bottom: 0;
+}
+.indexlisting {
+  margin: 0 -35px 0 -35px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: stretch;
+}
+.indextitles {
+  margin-bottom: 20px;
+}
+.indexproject {
+  width: 50%;
+  float: left;
+  background-color: #262626;
+  color: #fff;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: stretch;
+}
+.indexproject a {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex: 1;
+}
+.indexprojectleft {
+  width: 50%;
+}
+.indexprojectleft .para {
+  margin-bottom: 20px;
+}
+.indexproject .container {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-origin: content-box;
+  flex: 1;
+}
 .project {
   background-color: #262626;
   color: #fff;
@@ -145,6 +191,14 @@ a:focus {
   color: #0089b3;
   text-decoration: none;
 }
+.whitelink {
+  color: #fff;
+}
+.whitelink:hover,
+.whitelink:focus {
+  color: #fff;
+  text-decoration: none;
+}
 p a {
   color: #0089b3;
 }
@@ -235,7 +289,7 @@ nav > .container {
   display: block;
   position: relative;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 90%;
 }
 .fullimage {
   display: block;
@@ -279,10 +333,25 @@ nav > .container {
 }
 .license {
   position: absolute;
-  bottom: 5px;
+  bottom: 0px;
   right: 5px;
   font-size: 0.7rem;
   color: #ddd;
+}
+.arrowcontainer {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+}
+.morearrow {
+  font-size: 28px;
+  color: #fff;
+  margin: auto;
+  display: block;
 }
 .about h1 {
   margin-top: 10px;
@@ -473,31 +542,31 @@ section .categoryheader {
 .blue1 {
   background-color: #55b6d0;
 }
-.blue1 .container {
+.blue1 > .container {
   background-color: #62bfd9;
 }
 .blue2 {
   background-color: #2eabce;
 }
-.blue2 .container {
+.blue2 > .container {
   background-color: #36b5d9;
 }
 .blue3 {
   background-color: #067da1;
 }
-.blue3 .container {
+.blue3 > .container {
   background-color: #0089b3;
 }
 .blue4 {
   background-color: #136379;
 }
-.blue4 .container {
+.blue4 > .container {
   background-color: #106c86;
 }
 .blue5 {
   background-color: #04495b;
 }
-.blue5 .container {
+.blue5 > .container {
   background-color: #005066;
 }
 .text404 {
