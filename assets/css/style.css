@@ -151,6 +151,17 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("/assets/img/stuff/ubc/ubc.png");
   }
 }
+.pickaplace {
+  background-color: #C44F00;
+}
+.pickaplace .container {
+  background-color: #d35400;
+}
+@media only screen and (min-width: 768px) {
+  .pickaplace .container {
+    background-image: url("/assets/img/code/pickaplace/pickaplace.png");
+  }
+}
 #pony {
   position: fixed;
   background-image: url("/assets/img/dewdrop-flying.png");
