@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>button</title>
+<script type="text/javascript">
+function init() {
+	var my_height = window.innerHeight;
+	document.getElementById("bodyid").style.height = my_height+"px";
+}
+</script>
+</head>
+<body id="bodyid">
+<style>
+body {
+	margin:0;
+	padding:0;
+	min-width:100%;
+	min-height:100%;
+}
+#imgdiv {
+	width:177px;
+	height:199px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-88px;
+	margin-left:-99px;
+}
+</style>
+<div id="audiodiv"></div>
+<div id="imgdiv">
+	<img src="james.jpg" alt="Click!" onClick="playAudio()" />
+</div>
+<script type="text/javascript">
+
+var source= document.createElement('source');
+if (audio.canPlayType('audio/mpeg;')) {
+    source.type= 'audio/mpeg';
+    source.src= 'audio/song.mp3';
+} else {
+    source.type= 'audio/ogg';
+    source.src= 'audio/song.ogg';
+}
+audio.appendChild(source);
+
+function playAudio() {
+	//var fileNum = Math.floor((Math.random()*20)+1); //Change this to number of files.
+	audioTag = document.createElement("audio");
+	audioTag.setAttribute("preload", "auto");
+	//and don't forget to change this to fileNum + ".mp3"
+	audioTag.setAttribute("src", "1.mp3");
+	audioTag.setAttribute("id", "audioPlayer");
+	document.getElementById("audiodiv").appendChild(audioTag);
+	audioTag.play();
+}
+</script>
+<!-- 
+/button v0.00.0.2
+
+changelog
+
+v0.00.0.2
+fixed audio stacking when button is spammed (hopefully)
+-->
+
+</body>
+</html>
