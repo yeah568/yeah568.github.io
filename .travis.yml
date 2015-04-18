@@ -3,8 +3,10 @@ language: ruby
 rvm:
 - 2.1
 
+install: gem install htmlproof
+
 script:
-- bundle exec htmlproof ./ --only-4xx --check-favicon --check-html
+- htmlproof ./ --only-4xx --check-favicon --check-html
 
 env:
   global:
