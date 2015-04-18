@@ -3,7 +3,7 @@ language: ruby
 rvm:
 - 2.1
 
-install: gem install htmlproof
+install: gem install html-proofer
 
 script:
 - htmlproof ./ --only-4xx --check-favicon --check-html
