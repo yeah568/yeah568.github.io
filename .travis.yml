@@ -6,7 +6,7 @@ rvm:
 install: gem install html-proofer
 
 script:
-- htmlproof ./ --only-4xx --check-favicon --check-html --file-ignore "/.+\/d.+/", "google67a5cd761da5a742.html", "/rollin/index.html", "shikib/index.html" --verbose
+- htmlproof ./ --only-4xx --check-favicon --check-html --file-ignore "/.+\/d.+/", "./google67a5cd761da5a742.html", "./rollin/index.html", "./shikib/index.html" --verbose
 
 env:
   global:
