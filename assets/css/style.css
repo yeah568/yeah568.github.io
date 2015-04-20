@@ -725,15 +725,19 @@ footer {
 .blogcontainer {
   border-bottom: 1px solid #666;
 }
+.blogcontainer > .para:last-of-type {
+  margin-bottom: 20px;
+}
 .project:last-of-type > .blogcontainer {
   border-bottom: none;
 }
-
 .highlight pre {
   background: none;
   border: none;
 }
-
+.post-header {
+  margin-bottom: 40px;
+}
 .img-center {
   display: block;
   margin: 20px auto 20px auto;
