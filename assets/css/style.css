@@ -152,6 +152,17 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("/assets/img/stuff/ubc/ubc.png");
   }
 }
+.fourforall {
+  background-color: #34495E;
+}
+.fourforall .container {
+  background-color: #46627f;
+}
+@media only screen and (min-width: 768px) {
+  .fourforall .container {
+    background-image: url("/assets/img/sites/fourforall/fourforall.png");
+  }
+}
 .pickaplace {
   background-color: #C44F00;
 }
@@ -324,22 +335,27 @@ nav > .container {
 }
 @media only screen and (max-width: 640px) {
   .fullimage {
-    background: transparent url("/assets/img/index/b640.jpg") center center no-repeat;
+    background: transparent url("/assets/img/index/d640.png") center center no-repeat;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1200px) {
   .fullimage {
-    background: transparent url("/assets/img/index/b1200.jpg") center center no-repeat;
+    background: transparent url("/assets/img/index/d1200.png") center center no-repeat;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1920px) {
   .fullimage {
-    background: transparent url("/assets/img/index/b1920.jpg") center center no-repeat;
+    background: transparent url("/assets/img/index/d1920.png") center center no-repeat;
   }
 }
-@media only screen and (min-width: 1921px) {
+@media only screen and (min-width: 1921px) and (max-width: 3840px) {
   .fullimage {
-    background: transparent url("/assets/img/index/b3840.jpg") center center no-repeat;
+    background: transparent url("/assets/img/index/d3840.png") center center no-repeat;
+  }
+}
+@media only screen and (min-width: 3841px) {
+  .fullimage {
+    background: transparent url("/assets/img/index/d5120.png") center center no-repeat;
   }
 }
 .indexcontent {
@@ -352,7 +368,6 @@ nav > .container {
 .indextext {
   font-size: 2.5rem;
   margin: auto;
-  color: #000;
 }
 .license {
   position: absolute;
@@ -548,8 +563,9 @@ section .categoryheader {
 }
 .videocarousel .carousel-control {
   z-index: 15;
-  height: 20%;
-  top: 40%;
+  height: 80%;
+  top: 10%;
+  background: none;
 }
 .badgewrap {
   overflow-x: auto;
