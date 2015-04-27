@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media only screen and (min-width: 768px) {
   .bronycan .container {
-    background-image: url("/assets/img/sites/bronycan/bronycan.png");
+    background-image: url("/assets/img/code/bronycan/bronycan.png");
   }
 }
 .gvssai {
@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media only screen and (min-width: 768px) {
   .gvssai .container {
-    background-image: url("/assets/img/sites/gvssai/gvssai.png");
+    background-image: url("/assets/img/code/gvssai/gvssai.png");
   }
 }
 .restart {
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media only screen and (min-width: 768px) {
   .restart .container {
-    background-image: url("/assets/img/sites/restart/restart.png");
+    background-image: url("/assets/img/code/restart/restart.png");
   }
 }
 .jory {
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media only screen and (min-width: 768px) {
   .ubcesports .container {
-    background-image: url("/assets/img/videos/ubcesports/ubcesports.png");
+    background-image: url("/assets/img/stuff/ubcesports/ubcesports.png");
   }
 }
 .tracks {
@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media only screen and (min-width: 768px) {
   .tracks .container {
-    background-image: url("/assets/img/videos/tracks/tracks.png");
+    background-image: url("/assets/img/stuff/tracks/tracks.png");
   }
 }
 .rollin {
@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media only screen and (min-width: 768px) {
   .fourforall .container {
-    background-image: url("/assets/img/sites/fourforall/fourforall.png");
+    background-image: url("/assets/img/code/fourforall/fourforall.png");
   }
 }
 .pickaplace {
