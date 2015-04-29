@@ -362,12 +362,29 @@ nav > .container {
   display: block;
   position: relative;
   z-index: 2;
-  margin: 5rem auto 0 auto;
+  margin: 3rem auto 0 auto;
   color: #fff;
 }
 .indextext {
   font-size: 2.5rem;
   margin: auto;
+}
+.icons-container {
+  margin-top: 3rem;
+}
+.index-icons {
+  text-align: center;
+}
+.index-icons i {
+  font-size: 4rem;
+  transition: transform 0.2s;
+}
+.index-icons i:hover,
+.index-icons i:focus {
+  transform: translateY(-10px);
+}
+.index-icons div {
+  font-size: 1.5rem;
 }
 .license {
   position: absolute;

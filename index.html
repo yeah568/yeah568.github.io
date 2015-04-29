@@ -67,13 +67,13 @@
     <div class="collapse navbar-collapse navbar-right" id="main-navbar-collapse">
         <ul class="nav navbar-nav">
             <li>
-                <a href="/blog">blog</a>
-            </li>
-            <li>
                 <a href="/code">code</a>
             </li>
             <li>
                 <a href="/stuff">stuff</a>
+            </li>
+            <li>
+                <a href="/blog">blog</a>
             </li>
             <li>
                 <a href="/about">about</a>
@@ -86,25 +86,50 @@
 </div>
 			</nav>
 			<div class="indexcontent container">
-				<span class="indextext">Hey! I'm James. I make things.</span>
+				<div class="row">
+					<div class="col-xs-12 indextext">Hey! I'm James. I make things.</div>
+				</div>
 			</div>
-			<div class="arrowcontainer animated fadeInDown">
+			<div class="icons-container container">
+				<div class="row">
+					<a href="/code">
+						<div class="col-xs-4 col-sm-4 index-icons">
+							<i class="fa fa-code"></i>
+							<div>code</div>
+						</div>
+					</a>
+					<a href="/stuff">
+						<div class="col-xs-4 col-sm-4 index-icons">
+							<i class="fa fa-cubes"></i>
+							<div>stuff</div>
+						</div>
+					</a>
+					<a href="/blog">
+						<div class="col-xs-4 col-sm-4 index-icons">
+							<i class="fa fa-book"></i>
+							<div>blog</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<!--<div class="arrowcontainer animated fadeInDown">
 				<a href="#about">
 					<div class="morearrow fa-stack">
 						<i class="fa fa-circle-thin fa-stack-2x"></i>
 						<i class="fa fa-angle-down fa-stack-1x" style="font-size: 1.5em"></i>
 					</div>
 				</a>
-			</div>
+			</div>-->
 			<span class="license">
 			</span>
 		</div>
 	</div>
+	<div class="clearfix"></div>
 	<a name="about"></a>
 	<section class="blue2">
 		<div class="container">
 			<a href="/about"><h2>About</h2></a>
-			<p>Basically, the gist of it is that I'm a huge nerd. Always have been, probably always will be. It's what got me into programming, making things, and pursuing a career in computer science. </p>
+			<p>I'm a huge nerd. Always have been, probably always will be. It's what got me into programming, making things, and pursuing a career in computer science. As a result of that, I do lots of computer-y stuff.</p>
 			<p>I'm currently in second year at the beautiful University of British Columbia, and am fluent with a whole host of languages, frameworks, and other programming-y things, including Java, Python, C#, C/C++, HTML5/CSS3, JavaScript, AngularJS, and Node.js. Check out my <a href="/about" class="whitelink">about page</a> for a full list.</p>
 		</div>
 	</section>
@@ -118,7 +143,7 @@
 			</a>
 			<div class="indexlisting">
 				
-					<section class="indexproject pickaplace col-sm-6">
+					<section class="indexproject pickaplace col-xs-6">
 						<a href="/code/pickaplace" name="pickaplace">
 							<div class="container">
 								<div class="indexprojectleft">
@@ -129,7 +154,7 @@
 						</a>
 					</section>
 				
-					<section class="indexproject simplebus col-sm-6">
+					<section class="indexproject simplebus col-xs-6">
 						<a href="/code/simplebus" name="simplebus">
 							<div class="container">
 								<div class="indexprojectleft">
@@ -146,7 +171,7 @@
 			</a>
 			<div class="indexlisting">
 				
-					<section class="indexproject cpsc121ta col-sm-6">
+					<section class="indexproject cpsc121ta col-xs-6">
 						<a href="/stuff/cpsc121ta" name="cpsc121ta">
 							<div class="container">
 								<div class="indexprojectleft">
@@ -157,7 +182,7 @@
 						</a>
 					</section>
 				
-					<section class="indexproject tracks col-sm-6">
+					<section class="indexproject tracks col-xs-6">
 						<a href="/stuff/tracks" name="tracks">
 							<div class="container">
 								<div class="indexprojectleft">
@@ -182,20 +207,20 @@
 	<div class="project blue4">
 		<div class="container contactcontainer">
 			<a href="mailto:james@jamesliu.ca" target="_blank">
-			<div class="contactbutton col-xs-12 col-sm-6 col-md-4 email">
-				<i class="fa fa-envelope"></i>&nbsp;Email
-			</div>
-		</a>
-		<a href="https://github.com/yeah568" target="_blank">
-			<div class="contactbutton col-xs-12 col-sm-6 col-md-4 github">
-				<i class="fa fa-github"></i>&nbsp;GitHub
-			</div>
-		</a>
-		<a href="http://www.linkedin.com/profile/view?id=92271607" target="_blank">
-			<div class="contactbutton col-xs-12 col-sm-6 col-md-4 linkedin">
-				<i class="fa fa-linkedin"></i>&nbsp;Linkedin
-			</div>
-		</a>
+				<div class="contactbutton col-xs-12 col-sm-6 col-md-4 email">
+					<i class="fa fa-envelope"></i>&nbsp;Email
+				</div>
+			</a>
+			<a href="https://github.com/yeah568" target="_blank">
+				<div class="contactbutton col-xs-12 col-sm-6 col-md-4 github">
+					<i class="fa fa-github"></i>&nbsp;GitHub
+				</div>
+			</a>
+			<a href="http://www.linkedin.com/profile/view?id=92271607" target="_blank">
+				<div class="contactbutton col-xs-12 col-sm-6 col-md-4 linkedin">
+					<i class="fa fa-linkedin"></i>&nbsp;Linkedin
+				</div>
+			</a>
 		</div>
 	</div>
 
