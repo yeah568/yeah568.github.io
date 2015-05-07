@@ -323,7 +323,8 @@ nav > .container {
   display: block;
   position: relative;
   min-width: 100%;
-  min-height: 90%;
+  min-height: 800px;
+  height: 90%;
 }
 .fullimage {
   display: block;
@@ -374,10 +375,14 @@ nav > .container {
 }
 .index-icons {
   text-align: center;
+  margin-top: 20px;
 }
 .index-icons i {
   font-size: 4rem;
   transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
 }
 .index-icons i:hover,
 .index-icons i:focus {
