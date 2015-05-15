@@ -1,6 +1,16 @@
 h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
+code {
+  color: #268bd2;
+  background-color: #002b36;
+}
+.strike {
+  text-decoration: line-through;
+}
+.footnotes:before {
+  content: 'Footnotes';
+}
 .indexprojects .container {
   padding-bottom: 0;
 }
@@ -16,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 .indextitles {
   margin-bottom: 20px;
 }
+
 .indexproject {
   width: 50%;
   float: left;
