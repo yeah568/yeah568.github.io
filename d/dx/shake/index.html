@@ -16,7 +16,8 @@
   <body>
     <canvas id="canvas"></canvas>
     <script>
-      // shake v1.0.1
+      // shake v1.0.2
+      // thanks kevin
       var canvas = canvas = document.getElementById('canvas');
       var ctx = canvas.getContext('2d');
       var w, h;
@@ -49,11 +50,15 @@
         bottom = james.y + (james.img.height),
         left = james.x,
         right = james.x + (james.img.width);
-        if (bottom + james.vy  > h || top < 0) {
-          james.vy = -james.vy;
+        if (bottom + james.vy > h) {
+          james.vy = -Math.abs(james.vy);
+        } else if (top + james.vy < 0) {
+          james.vy = Math.abs(james.vy);
         }
-        if (right > w || left < 0) {
-          james.vx = -james.vx;
+        if (right + james.vx > w) {
+          james.vx = -Math.abs(james.vx);
+        } else if (left + james.vx < 0) {
+          james.vx = Math.abs(james.vx);
         }
         james.x += james.vx;
         james.y += james.vy;
@@ -65,12 +70,88 @@
         canvas.height = Math.max(document.body.clientHeight, james.img.height);
         w = canvas.width;
         h = canvas.height;
-        james.x = w/2;
-        james.y = h/2;
       }
 
       window.addEventListener('resize', resize);
-      init();
+      window.addEventListener('load', init);
+    </script>
+  </body>
+</html><!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+    </style>
+    <title>shake</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script>
+      // shake v1.0.2
+      // thanks kevin
+      var canvas = canvas = document.getElementById('canvas');
+      var ctx = canvas.getContext('2d');
+      var w, h;
+      var raf;
+
+      var james = {
+        x: 0,
+        y: 0,
+        vx: 20,
+        vy: 21,
+        img: new Image(),
+        draw: function() {
+          ctx.drawImage(this.img, this.x, this.y);
+        }
+      };
+
+      function init() {
+        resize();
+        james.x = w/2;
+        james.y = h/2;
+        james.img.src = 'james.jpg';
+
+        window.requestAnimationFrame(draw);
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, w, h);
+        james.draw();
+        var top = james.y,
+        bottom = james.y + (james.img.height),
+        left = james.x,
+        right = james.x + (james.img.width);
+        if (bottom + james.vy > h) {
+          james.vy = -Math.abs(james.vy);
+        } else if (top + james.vy < 0) {
+          james.vy = Math.abs(james.vy);
+        }
+        if (right + james.vx > w) {
+          james.vx = -Math.abs(james.vx);
+        } else if (left + james.vx < 0) {
+          james.vx = Math.abs(james.vx);
+        }
+        james.x += james.vx;
+        james.y += james.vy;
+        raf = window.requestAnimationFrame(draw)
+      }
+
+      function resize() {
+        canvas.width = Math.max(document.body.clientWidth, james.img.width);
+        canvas.height = Math.max(document.body.clientHeight, james.img.height);
+        w = canvas.width;
+        h = canvas.height;
+      }
+
+      window.addEventListener('resize', resize);
+      window.addEventListener('load', init);
     </script>
   </body>
 </html>
