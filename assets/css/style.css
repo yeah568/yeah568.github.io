@@ -768,6 +768,14 @@ footer {
   background: #007091;
 }
 
+.stackoverflow {
+  background: #F37A20;
+}
+.stackoverflow:hover,
+.stackoverflow:active {
+  background: #D1691C;
+}
+
 
 /* blog stuff */
 
