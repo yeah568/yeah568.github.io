@@ -196,6 +196,17 @@ code {
     background-image: url("/assets/img/code/projectlaunch/projectlaunch.png");
   }
 }
+.broadcom {
+  background-color: #ed1c24;
+}
+.broadcom .container {
+  background-color: #ed1c24;
+}
+@media only screen and (min-width: 768px) {
+  .broadcom .container {
+    background-image: url("/assets/img/code/broadcom/broadcom.png");
+  }
+}
 #pony {
   position: fixed;
   background-image: url("/assets/img/dewdrop-flying.png");
@@ -839,4 +850,30 @@ footer {
 .post-links {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+/* #LoveWins */
+.navbar-brand:hover,
+.navbar-brand:focus {
+  background: #E40303;
+}
+.navbar-custom .navbar-nav>li>a[href$="/code"]:hover,
+.navbar-custom .navbar-nav>li>a[href$="/code"]:focus {
+  background: #FF8C00;
+}
+.navbar-custom .navbar-nav>li>a[href$="/stuff"]:hover,
+.navbar-custom .navbar-nav>li>a[href$="/stuff"]:focus {
+  background: #FFED00;
+}
+.navbar-custom .navbar-nav>li>a[href$="/blog"]:hover,
+.navbar-custom .navbar-nav>li>a[href$="/blog"]:focus {
+  background: #008026;
+}
+.navbar-custom .navbar-nav>li>a[href$="/about"]:hover,
+.navbar-custom .navbar-nav>li>a[href$="/about"]:focus {
+  background: #004DFF;
+}
+.navbar-custom .navbar-nav>li>a[href$="/contact"]:hover,
+.navbar-custom .navbar-nav>li>a[href$="/contact"]:focus {
+  background: #750787;
 }
