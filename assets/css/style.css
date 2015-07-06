@@ -853,7 +853,7 @@ footer {
 }
 
 /* #LoveWins */
-.navbar-brand:hover,
+/*.navbar-brand:hover,
 .navbar-brand:focus {
   background: #E40303;
 }
@@ -877,3 +877,4 @@ footer {
 .navbar-custom .navbar-nav>li>a[href$="/contact"]:focus {
   background: #750787;
 }
+*/
