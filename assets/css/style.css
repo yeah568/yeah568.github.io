@@ -8,6 +8,12 @@ code {
 .strike {
   text-decoration: line-through;
 }
+.footnote:before {
+  content: '[';
+}
+.footnote:after {
+  content: ']';
+}
 .footnotes:before {
   content: 'Footnotes';
 }
