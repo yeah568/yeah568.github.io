@@ -8,7 +8,7 @@ rvm:
 install: gem install html-proofer
 
 script:
-- htmlproof ./ --only-4xx --check-html --file-ignore "/.*\/d.*/" --href-ignore /https:\/\/\(www\)?\.youtube\.com.*/ --verbose
+- htmlproof ./ --only-4xx --check-html --file-ignore "/.*\/d.*/" --href-ignore '/https:\/\/(www)?\.youtube\.com.*/' --verbose
 
 env:
   global:
