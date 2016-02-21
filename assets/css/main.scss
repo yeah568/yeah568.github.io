@@ -1,0 +1,347 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: 	"Open Sans", sans-serif;
+$base-font-size:   	16px;
+$base-font-weight: 	400;
+$small-font-size:  	$base-font-size * 0.875;
+$base-line-height: 	1.5;
+
+$spacing-unit:     	30px;
+
+$text-color:       	#fff;
+$background-color: 	#fdfdfd;
+$brand-color:      	#2a7ae2;
+
+$grey-color:      	#828282;
+$grey-color-light:	lighten($grey-color, 40%);
+$grey-color-dark: 	darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+$blue-main:			#01B0F0;
+$green-main:		#AEEE00;
+$red-main: 			#FF7800;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+.navbar-custom {
+	transition: 0.2s ease;
+	.container {
+		background: none;
+	}
+	.nav {
+		&>li {
+			&>a {
+				&:focus,
+				&:hover {
+					background: none;
+				}
+			}
+		}
+	}
+}
+
+.dark {
+	background: #333;
+}
+
+.container {
+	z-index: -5 !important;
+}
+
+.commit {
+	display: flex;
+	align-items: stretch;
+	position: relative;
+	padding: 0 15px;
+
+	&>a {
+		flex: 1;
+		display: flex;
+	}
+
+	p {
+		a {
+			flex: unset;
+			display: unset;
+		}
+	}
+
+	.node {
+		$node-size: 100px;
+		$icon-size: 36px;
+		$big-icon-size: 60px;
+		$border-width: 10px;
+
+		flex: initial;
+		display: flex;
+		align-items: center;
+		width: 150px;
+		margin: 0 15px;
+
+		position: relative;
+
+		&::before {
+			content: "";
+			border-left: 5px solid $blue-main;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+			z-index: 10;
+		}
+
+		.content {
+			width: auto;
+			position: relative;
+			margin-top: 25px;
+			margin-bottom: 25px;
+			border: $border-width solid;
+			z-index: 10;
+			border-radius: 50%;
+			text-align: center;
+			width: $node-size;
+			height: $node-size;
+			overflow: hidden;
+
+			.fa, .octicon {
+				margin-top: (100px - (2 * $border-width) - $icon-size) / 2;
+				display: inline-block;
+				font-size: $icon-size;
+				vertical-align: middle;
+				line-height: normal;
+			}
+		}
+
+		.big {
+		width: 150px !important;
+		height: 150px !important;
+
+			.fa, .octicon {
+				margin-top: (150px - (2 * $border-width) - $big-icon-size) / 2;
+				display: inline-block;
+				font-size: $big-icon-size;
+				vertical-align: middle;
+				line-height: normal;
+			}
+		}
+
+		.blue-border {
+			border-color: $blue-main;
+		}
+
+		.blue-bg {
+			background: lighten($blue-main, 20%);
+		}
+
+		.green-border {
+			border-color: darken($green-main, 10%);
+		}
+
+		.green-bg {
+			background: $green-main;
+		}
+
+		.red-border {
+			border-color: $red-main;
+		}
+
+		.red-bg {
+			background: lighten($red-main, 20%);
+		}
+
+		.github {
+			border-color: #000;
+			background: lighten(#000, 20%);
+		}
+
+		.linkedin {
+			$linkedin: #0077b5;
+			border-color: darken($linkedin, 20%);
+			background: $linkedin;
+		}
+	}
+
+	&:first-child .node::before {
+		top: 25px;
+	}
+
+	&:last-child .node::before {
+		bottom: 25px;
+	}
+	.message {
+		flex: 1;
+		display: flex;
+		align-items: center;
+	}
+	.message-contents {
+		flex: 1;
+	}
+
+	h2, h3, h4 {
+		margin: 0;
+	}
+
+}
+
+.branch {
+	position: relative;
+
+	&::before {
+		background: url('/assets/img/branch.png') no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		content: "";
+		top: -25px;
+		left: 90px;
+		width: 80px;
+		height: 50px;
+		z-index: 1;
+	}
+
+	&::after {
+		background: url('/assets/img/branch.png') no-repeat;
+		background-size: 100% 100%;
+		transform: scaleY(-1);
+		position: absolute;
+		content: "";
+		bottom: -25px;
+		left: 90px;
+		width: 80px;
+		height: 50px;
+		z-index: 1;
+	}
+
+
+	.node {
+		margin-left: 90px;
+	}
+
+	.node::after {
+		position: absolute;
+        border-left: 5px solid $blue-main;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        content: "";
+        z-index: 10;
+	}	
+
+	.commit {
+		
+		&:first-child .node::before {
+			top: 25px !important;
+		}
+		
+		&:last-child .node::before {
+			bottom: 25px !important;
+		}
+	}
+
+	.node::before {
+		content: "";
+		position: absolute;
+	    top: 0;
+    	bottom: 0;
+		left: 50%;
+		border-left: 5px solid $red-main;
+		z-index: 9;
+	}
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 -15px;
+	.item {
+		flex: 1 1 25%;
+		margin: 0 15px;
+		// Dirty, dirty hack to get intrinsic width down to < 25%
+		// see https://bugzilla.mozilla.org/show_bug.cgi?id=1086218#c4
+		width: 0;
+		overflow: auto;
+		a {
+			max-width: 100%;
+			width: auto;
+			height: auto;
+		}
+		img {
+			max-width: 100%;
+			width: auto;
+			height: auto;
+		}
+	}
+}
+
+.links {
+	a[href*="github.com"]::before {
+		display: inline-block;
+    	font: normal normal normal 14px/1 FontAwesome;
+    	font-size: inherit;
+    	text-rendering: auto;
+    	-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
+		content: "\f09b";
+		margin-right: 5px;
+	}
+}
+
+.fancybox-nav {
+    width: 60px !important;       
+
+	span {
+	    visibility: visible !important;
+	    opacity: 0.5 !important;
+	}
+
+	&:hover span {
+	    opacity: 1 !important;
+	}
+}
+
+.fancybox-next {
+    right: -75px !important;
+}
+
+.fancybox-prev {
+    left: -75px !important;
+}
+
+.fancybox {
+	position: relative;
+	.fa-play {
+		position: absolute;
+		font-size: 36px;
+		top: 50%;
+		left: 50%;
+	}
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;

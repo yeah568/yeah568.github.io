@@ -1,239 +1,223 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>James Liu // Home</title>
-    <meta charset="utf-8">
-    <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,400italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/solarized-dark.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/animate.css">
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/assets/js/konami.js"></script>
-    <script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
-    <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="referrer" content="always">
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <script type="text/javascript">
+---
+layout: default
+---
 
-    var konami = new Konami(function() {
-        var startl = -463;
-        var starth = -353;
-        var width = $(window).width() + 230;
-        var height = $(window).height();
-        $('#pony').show();
-        $('#pony').velocity({left: width, top: height}, 2000, "swing", function() {
-            $('#pony').hide();
-            $('#pony').velocity({left: startl, top: starth}, 0);
-        });
-      });
-    </script>
-</head>
-<body>
-	<div id="pony"></div>
-	<div class="fullcontainer">
-		<div class="fullimage">
-			<nav class="navbar navbar-custom navbar-static-top navbar-index" role="navigation">
-				<div class="container">
-    <div class="navbar-header">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#main-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">James Liu</a>
-    </div>
-    <div class="collapse navbar-collapse navbar-right" id="main-navbar-collapse">
-        <ul class="nav navbar-nav">
-            <li>
-                <a href="/code">code</a>
-            </li>
-            <li>
-                <a href="/stuff">stuff</a>
-            </li>
-            <li>
-                <a href="/blog">blog</a>
-            </li>
-            <li>
-                <a href="/about">about</a>
-            </li>
-            <li>
-                <a href="/contact">contact</a>
-            </li>
-        </ul>
-    </div>
-</div>
-			</nav>
-			<div class="indexcontent container">
-				<div class="row">
-					<div class="col-xs-12 indextext">Hey! I'm James. I make things.</div>
-				</div>
-			</div>
-			<div class="icons-container container">
-				<div class="row">
-					<a href="/code">
-						<div class="col-xs-12 col-sm-4 index-icons">
-							<i class="fa fa-code"></i>
-							<div>code</div>
-						</div>
-					</a>
-					<a href="/stuff">
-						<div class="col-xs-12 col-sm-4 index-icons">
-							<i class="fa fa-cubes"></i>
-							<div>stuff</div>
-						</div>
-					</a>
-					<a href="/blog">
-						<div class="col-xs-12 col-sm-4 index-icons">
-							<i class="fa fa-book"></i>
-							<div>blog</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<!--<div class="arrowcontainer animated fadeInDown">
-				<a href="#about">
-					<div class="morearrow fa-stack">
-						<i class="fa fa-circle-thin fa-stack-2x"></i>
-						<i class="fa fa-angle-down fa-stack-1x" style="font-size: 1.5em"></i>
-					</div>
-				</a>
-			</div>-->
-			<span class="license">
-			</span>
-		</div>
-	</div>
-	<div class="clearfix"></div>
-	<a name="about"></a>
-	<section class="blue2">
-		<div class="container">
-			<a href="/about"><h2>About</h2></a>
-			<p>I'm a huge nerd. Always have been, probably always will be. It's what got me into programming, making things, and pursuing a career in computer science. As a result of that, I do lots of computer-y stuff.</p>
-			<p>I'm currently in second year at the beautiful University of British Columbia, and am fluent with a whole host of languages, frameworks, and other programming-y things, including Java, Python, C#, C/C++, HTML5/CSS3, JavaScript, AngularJS, and Node.js. Check out my <a href="/about" class="whitelink">about page</a> for a full list.</p>
-		</div>
-	</section>
-	<a name="projects"></a>
-	<section class="blue3 indexprojects">
-		<div class="container">
-			<h2>Here's some things I've done recently!</h2>
-			<p>Click each project to read more, or the section header to view a full list of projects.</p>
-			<a href="/code">
-				<h3 class="indextitles">Code</h3>
-			</a>
-			<div class="indexlisting">
-				
-					<section class="indexproject pickaplace col-xs-6">
-						<a href="/code/pickaplace" name="pickaplace">
-							<div class="container">
-								<div class="indexprojectleft">
-									<h2>PickAPlaceFor.Us</h2>
-									<div class="para">Food is good. Indecision is bad. Let us help.</div>
-								</div>
-							</div>
-						</a>
-					</section>
-				
-					<section class="indexproject simplebus col-xs-6">
-						<a href="/code/simplebus" name="simplebus">
-							<div class="container">
-								<div class="indexprojectleft">
-									<h2>SimpleBus</h2>
-									<div class="para">When the buses you care about are arriving. That's it.</div>
-								</div>
-							</div>
-						</a>
-					</section>
-				
-			</div>
-			<a href="/stuff">
-				<h3 class="indextitles">Stuff</h3>
-			</a>
-			<div class="indexlisting">
-				
-					<section class="indexproject cpsc121ta col-xs-6">
-						<a href="/stuff/cpsc121ta" name="cpsc121ta">
-							<div class="container">
-								<div class="indexprojectleft">
-									<h2>UBC CPSC 121 TA</h2>
-									<div class="para">Teaching assistant for CPSC 121 Models of Computation at the University of British Columbia.</div>
-								</div>
-							</div>
-						</a>
-					</section>
-				
-					<section class="indexproject tracks col-xs-6">
-						<a href="/stuff/tracks" name="tracks">
-							<div class="container">
-								<div class="indexprojectleft">
-									<h2>Tracks</h2>
-									<div class="para">A one minute pitch for a new competitive fitness app for the Launch Academy Student Startup Challenge (we got 7th!).</div>
-								</div>
-							</div>
-						</a>
-					</section>
-				
-			</div>
-		</div>
-	</section>
-	<section class="blue4">
-		<div class="container">
-			<a href="/contact">
-				<h2>Contact</h2>
-			</a>
-			<p>There's more ways to reach me on my <a href="/contact" class="whitelink">contact page</a>!</p>
-		</div>
-	</section>
-	<div class="project blue4">
-		<div class="container contactcontainer">
-			<a href="mailto:james@jamesliu.ca" target="_blank">
-				<div class="contactbutton col-xs-12 col-sm-4 email">
-					<i class="fa fa-envelope"></i>&nbsp;Email
-				</div>
-			</a>
-			<a href="https://github.com/yeah568" target="_blank">
-				<div class="contactbutton col-xs-12 col-sm-4 github">
-					<i class="fa fa-github"></i>&nbsp;GitHub
-				</div>
-			</a>
-			<a href="http://www.linkedin.com/profile/view?id=92271607" target="_blank">
-				<div class="contactbutton col-xs-12 col-sm-4 linkedin">
-					<i class="fa fa-linkedin"></i>&nbsp;Linkedin
-				</div>
-			</a>
-		</div>
-	</div>
 
-<footer>
-	<div class="container">
-		<div class="col-xs-12 col-sm-6 footer-cols">
-			<div>&#169; 2014-2015 James Liu</div>
-			<div>All other trademarks are the property of their respective owners.</div>
-		</div>
-		<div class="col-xs-12 col-sm-6 footer-cols">
-			<span class="footer-right">Built in Vancouver with Bootstrap, Jekyll and love.</span>
-		</div>
-	</div>
-</footer>
-</body>
-</html>
+<script>
+  $(function(){
+      $(".typer").typed({
+          strings: ["I make things.", "I develop websites.", "I create experiences.", "I build awesome stuff."],
+          typeSpeed: 0,
+          backDelay: 2000,
+          loop: true,
+          showCursor: false
+    });
+    $('nav').removeClass('dark');
+  });
+
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 10) {
+      $('nav').addClass('dark');
+    } else {
+      $('nav').removeClass('dark');
+    }
+  });
+</script>
+  
+
+
+  <div class="container">
+    <div class="row commit">
+      <div class="node">
+        <div class="big content center-block blue-border">
+          <img src="/assets/img/face.jpg">
+        </div>
+      </div><!--
+   --><div class="message">
+        <h2>Hey! I'm James. <span class="typer"></span></h3>
+      </div>
+    </div>
+
+    <a name="about"></a>
+    <div class="row commit">
+      <div class="node">
+        <div class="content center-block blue-border blue-bg">
+          <i class="octicon octicon-git-commit"></i>
+        </div>        
+      </div><!--
+   --><div class="message">
+        <h3>About</h3>
+      </div>
+    </div>
+      <div class="branch">
+        <div class="row commit">
+          <div class="node">
+            <div class="content center-block red-border red-bg">
+              <i class="fa fa-info-circle"></i>
+            </div>
+          </div><!--
+       --><div class="message">
+            <div class="message-contents">
+              <p>Third year computer science student at the beautiful University of British Columbia in Vancouver, BC. </p>
+
+              <p>Loves video games, electronics, computers, and generally anything that goes bleep or bloop. Also a pretty big fan of playing guitar, <span class="strike">long walks on the beach,</span> and Scott Pilgrim.</p>
+
+              <p>Writes pretty great code.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row commit">
+          <div class="node">
+            <div class="content center-block red-border red-bg">
+              <i class="fa fa-code"></i>
+            </div>
+          </div><!--
+       --><div class="message">
+            <div class="message-contents">
+              <p>Proficient in JavaScript (including ES6) and related technologies including Node.js, AngularJS, HTML5 and CSS3.</p>
+              <p>Experienced in Python, Java, C/C++, C#, SQL, MongoDB, Ruby and ARM/NEON Assembly.</p>
+              <p>Well versed in Git, Windows, Linux, Mac OS X, and the Adobe Creative Suite.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <a name="things"></a>
+    <div class="row commit">
+      <div class="node">
+        <div class="content center-block blue-border blue-bg">
+          <i class="octicon octicon-git-commit"></i>
+        </div>  
+      </div><!--
+   --><div class="message">
+        <h3>Things</h3>
+      </div>
+    </div>
+    <div class="branch">
+    {% for thing in site.posts | sort: 'date' %}
+      <div class="row commit">
+        <a href="{{ thing.url }}">
+          <div class="node">
+          
+            {% if thing.bgcolour and thing.bordercolour %}
+            <div class="content center-block" style="background: #{{thing.bgcolour}}; border-color: #{{thing.bordercolour}}">
+            {% else %}
+            <div class="content center-block red-border red-bg">
+            {% endif %}
+            
+              {% if thing.icon %}
+                <img src="/assets/img/{{thing.short}}/{{thing.icon}}"/>
+              {% elsif thing.faicon %}
+                <i class="fa fa-{{thing.faicon}}"></i>
+              {% elsif thing.categories contains "code" %}
+                <i class="fa fa-code"></i>
+              {% elsif thing.categories contains "site" %}
+                <i class="fa fa-globe"></i>
+              {% elsif thing.categories contains "work" %}
+                <i class="fa fa-briefcase"></i>
+              {% elsif thing.categories contains "school" %}
+                <i class="fa fa-graduation-cap"></i>
+              {% else %}
+                <i class="fa fa-cube"></i>
+              {% endif %}
+
+            </div>
+          </div>
+          <div class="message">
+            <div class="message-contents">
+              <div class="col-xs-12 col-sm-9">
+                <h3>{{ thing.title }}</h3>
+                <h4 class="visible-xs">{{ thing.date | date: "%B %Y"}}</h4>
+                <p style="margin-bottom: 0;">{{ thing.desc }}</p>
+                {% if thing.tech %}
+                <p style="margin-bottom: 0; font-size: 0.8em; font-style: italic;">{{ thing.tech | array_to_sentence_string }}</p>
+                {% endif %}
+              </div>
+              <div class="hidden-xs col-sm-3 text-right">
+                {{ thing.date | date: "%B %Y"}}
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+    </div>
+
+    <a name="contact"></a>
+    <div class="row commit">
+      <div class="node">
+        <div class="content center-block blue-border blue-bg">
+          <i class="octicon octicon-git-commit"></i>
+        </div>  
+      </div><!--
+   --><div class="col-xs-10 message">
+        <h3>Contact</h3>
+      </div>
+    </div>
+
+    <div class="branch">
+      <div class="row commit">
+        <a href="https://github.com/yeah568" target="_blank">
+          <div class="node col-xs-offset-1">
+            <div class="content center-block github">
+              <i class="fa fa-github"></i>
+            </div>
+          </div><!--
+       --><div class="col-xs-9 message">
+            <h3>GitHub</h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="row commit">
+        <a href="https://ca.linkedin.com/in/jliu97" target="_blank">
+          <div class="node col-xs-offset-1">
+            <div class="content center-block linkedin">
+              <i class="fa fa-linkedin"></i>
+            </div>
+          </div><!--
+       --><div class="col-xs-9 message">
+            <h3>LinkedIn</h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="row commit">
+        <a href="mailto:james@jamesliu.ca">
+          <div class="node col-xs-offset-1">
+            <div class="content center-block red-border red-bg">
+              <i class="fa fa-envelope"></i>
+            </div>
+          </div><!--
+       --><div class="col-xs-9 message">
+            <h3>Email</h3>
+          </div>
+        </a>
+      </div>
+      <div class="row commit">
+        <a href="/resume.pdf" target="_blank">
+          <div class="node col-xs-offset-1">
+            <div class="content center-block red-border red-bg">
+              <i class="fa fa-file-text"></i>
+            </div>
+          </div><!--
+       --><div class="col-xs-9 message">
+            <h3>Resume</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="row commit">
+      <div class="node">
+        <div class="content center-block blue-border blue-bg">
+          <i class="octicon octicon-git-commit"></i>
+        </div>
+      </div><!--
+   --><div class="message">
+        <h3>Initial commit</h3>
+      </div>
+    </div>
+  </div>

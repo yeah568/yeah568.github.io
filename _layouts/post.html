@@ -1,0 +1,201 @@
+---
+layout: default
+---
+
+<script>
+$(document).ready(function() {
+	$(".fancybox")
+		.attr('rel', 'gallery')
+		.fancybox({
+			beforeShow : function() {
+	      var alt = this.element.find('img').attr('alt');
+	      
+	      this.inner.find('img').attr('alt', alt);
+	      
+	      this.title = alt;
+	    },
+	    helpers: {
+	      title: {
+	        type: 'inside'
+	      }
+	    }
+	  });
+});
+</script>
+
+<div class="container">
+    <div class="row commit">
+       <div class="node">
+        {% if page.bgcolour and page.bordercolour %}
+        <div class="big content center-block" style="background: #{{page.bgcolour}}; border-color: #{{page.bordercolour}}">
+        {% else %}
+        <div class="big content center-block red-border red-bg">
+        {% endif %}
+        
+          {% if page.icon %}
+            <img src="/assets/img/{{page.short}}/{{page.icon}}"/>
+          {% elsif page.faicon %}
+            <i class="fa fa-{{page.faicon}}"></i>
+          {% elsif page.categories contains "code" %}
+            <i class="fa fa-code"></i>
+          {% elsif page.categories contains "site" %}
+            <i class="fa fa-globe"></i>
+          {% elsif page.categories contains "work" %}
+            <i class="fa fa-briefcase"></i>
+          {% elsif page.categories contains "school" %}
+            <i class="fa fa-graduation-cap"></i>
+          {% else %}
+            <i class="fa fa-cube"></i>
+          {% endif %}
+        </div>
+      </div>
+      <div class="message">
+   			<div class="message-contents">
+					<div class="col-xs-12 col-sm-9">
+	          <h2>{{ page.title }}</h2>
+	          <h4 class="visible-xs">{{ page.date | date: "%B %Y"}}</h4>
+	          <p style="margin-bottom: 0;">{{ page.desc }}</p>
+	          {% if page.tech %}
+	          <p style="margin-bottom: 0; font-size: 0.8em; font-style: italic;">{{ page.tech | array_to_sentence_string }}</p>
+	          {% endif %}
+	        </div>
+	        <div class="hidden-xs col-sm-3 text-right">
+	          {{ page.date | date: "%B %Y"}}
+	        </div>
+        </div>
+      </div>
+		</div>
+
+		<div class="row commit">
+			<div class="node">
+        <div class="content center-block blue-border blue-bg">
+          <i class="fa fa-info-circle"></i>
+       	</div>
+     	</div>
+     	<div class="message">
+   			<div class="message-contents">
+ 					<p>{{ content }}</p>
+        </div>
+      </div>
+		</div>
+
+		{% if page.gallery %}
+		<div class="row commit">
+			<div class="node">
+        <div class="content center-block blue-border blue-bg">
+          <i class="fa fa-picture-o"></i>
+       	</div>
+     	</div>
+     	<div class="message">
+   			<div class="message-contents gallery">
+   				{% for image in page.gallery %}
+   				<div class="item">
+   					{% if image.url contains "youtube.com/embed" %}
+   					<a href="{{image.url}}" class="fancybox fancybox.iframe">
+   						<img src="https://i.ytimg.com/vi/{{image.text}}/maxresdefault.jpg" />
+   						<i class="fa fa-play"></i>
+   					{% else %}
+	 					<a href="/assets/img/{{page.short}}/{{ image.url }}" class="thumbnail fancybox">
+	 						<img src="/assets/img/{{page.short}}/{{ image.url }}" alt="{{ image.text }}"/>
+	 					{% endif %}
+	 					</a>
+ 					</div>
+ 					{% endfor %}
+        </div>
+      </div>
+		</div>
+		{% endif %}
+
+		{% if page.links %}
+		<div class="row commit">
+			<div class="node">
+        <div class="content center-block blue-border blue-bg">
+          <i class="fa fa-external-link"></i>
+       	</div>
+     	</div>
+     	<div class="message">
+   			<div class="message-contents links">
+					{% for link in page.links %}
+ 					<a href="{{ link.url }}" target="_blank">{{ link.text }}</a><br>
+ 					{% endfor %}
+        </div>
+      </div>
+		</div>
+		{% endif %}
+
+		{% if page.next %}
+		<div class="row commit">
+			<a href="{{page.next.url}}">
+	     	<div class="node">
+	        {% if page.next.bgcolour and page.next.bordercolour %}
+	        <div class="content center-block" style="background: #{{page.next.bgcolour}}; border-color: #{{page.next.bordercolour}}">
+	        {% else %}
+	        <div class="content center-block red-border red-bg">
+	        {% endif %}
+	        
+	          {% if page.next.icon %}
+	            <img src="/assets/img/{{page.next.short}}/{{page.next.icon}}"/>
+	          {% elsif page.next.faicon %}
+	            <i class="fa fa-{{page.next.faicon}}"></i>
+	          {% elsif page.next.categories contains "code" %}
+	            <i class="fa fa-code"></i>
+	          {% elsif page.next.categories contains "site" %}
+	            <i class="fa fa-globe"></i>
+	          {% elsif page.next.categories contains "work" %}
+	            <i class="fa fa-briefcase"></i>
+	          {% elsif page.next.categories contains "school" %}
+	            <i class="fa fa-graduation-cap"></i>
+	          {% else %}
+	            <i class="fa fa-cube"></i>
+	          {% endif %}
+	        </div>
+	      </div>
+	      <div class="message">
+	   			<div class="message-contents">
+	   				<p style="margin-bottom: 0;">Next Project</p>
+	          <h2>{{ page.next.title }}</h2>
+	          <p style="margin-bottom: 0;">{{ page.next.desc }}</p>
+	        </div>
+	      </div>
+      </a>
+		</div>
+		{% endif %}
+
+		{% if page.previous %}
+		<div class="row commit">
+			<a href="{{page.previous.url}}">
+	     	<div class="node">
+	        {% if page.previous.bgcolour and page.previous.bordercolour %}
+	        <div class="content center-block" style="background: #{{page.previous.bgcolour}}; border-color: #{{page.previous.bordercolour}}">
+	        {% else %}
+	        <div class="content center-block red-border red-bg">
+	        {% endif %}
+	        
+	          {% if page.previous.icon %}
+	            <img src="/assets/img/{{page.previous.short}}/{{page.previous.icon}}"/>
+	          {% elsif page.previous.faicon %}
+	            <i class="fa fa-{{page.previous.faicon}}"></i>
+	          {% elsif page.previous.categories contains "code" %}
+	            <i class="fa fa-code"></i>
+	          {% elsif page.previous.categories contains "site" %}
+	            <i class="fa fa-globe"></i>
+	          {% elsif page.previous.categories contains "work" %}
+	            <i class="fa fa-briefcase"></i>
+	          {% elsif page.previous.categories contains "school" %}
+	            <i class="fa fa-graduation-cap"></i>
+	          {% else %}
+	            <i class="fa fa-cube"></i>
+	          {% endif %}
+	        </div>
+	      </div>
+	      <div class="message">
+	   			<div class="message-contents">
+	   				<p style="margin-bottom: 0;">Previous Project</p>
+	          <h2>{{ page.previous.title }}</h2>
+	          <p style="margin-bottom: 0;">{{ page.previous.desc }}</p>
+	        </div>
+	      </div>
+      </a>
+		</div>
+		{% endif %}
+</div>
