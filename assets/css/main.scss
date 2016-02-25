@@ -60,10 +60,18 @@ $red-main: 			#FF7800;
 			}
 		}
 	}
+	.navbar-toggle {
+		.icon-bar {
+			background-color: #fff;
+		}
+	}
+	.navbar-collapse {
+		background-color: #333339;
+	}
 }
 
 .dark {
-	background: #333;
+	background: #333339;
 }
 
 .container {
