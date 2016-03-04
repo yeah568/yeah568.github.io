@@ -338,9 +338,17 @@ $red-main: 			#FF7800;
 	}
 }
 
+/**
+ * Site footer
+ */
+
+footer p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
-        "layout",
         "syntax-highlighting"
 ;
