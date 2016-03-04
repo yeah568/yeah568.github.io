@@ -60,10 +60,15 @@ $red-main: 			#FF7800;
 			}
 		}
 	}
+	.navbar-toggle {
+		.icon-bar {
+			background-color: #fff;
+		}
+	}
 }
 
 .dark {
-	background: #333;
+	background: #333339;
 }
 
 .container {
