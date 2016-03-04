@@ -213,29 +213,26 @@ $red-main: 			#FF7800;
 .branch {
 	position: relative;
 
-	&::before {
-		background: url('/assets/img/branch.png') no-repeat;
+	&::before,
+	&::after {
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAyCAMAAAD886zOAAAAM1BMVEX/////eAD/eAD/eAD/eAD/eAD/eAD/eAD/eAD/eAD/eAD/eAD/eAD/eAD/eAD/eAD/eAA5T92bAAAAEHRSTlMAECAwQFBgcICQoLDA0ODwVOCoyAAAAQxJREFUeNq111sOhCAMBVDLm0Jp97/aicyEOPrJtQs4ubSi9bCzwgGrl8AIBMcJFiDYTlCAYLazHA70E2RkE9ER0wQbDiSdYkZGRD/cfYLqYaDTr5hgYrBvFXQbrTu0qLCQUX/kQHXSi4FJqrbITJhhj0Uqe0jIonaJ6RAk26UEYbqqf2bxgIMPu9bgSLtmbPZfPe8GpSw3c3DaDOoepkkNu2a/m9rS3ugpsT6DbnbUF3kE5bhnUuSBM1dH233yZfsqhXo7fZtzhwRFvj8psl7J2UzM9YR+3SjJEhW0ygReZCMM6RYpdIDIvkT0R11w69ZvOhUmEr+0ZHYcSC8t/wX9f9KBYJkRgWB4B/wAAyQgMnvf+zYAAAAASUVORK5CYII=);
+		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		position: absolute;
 		content: "";
-		top: -25px;
-		left: 90px;
 		width: 80px;
 		height: 50px;
+		left: 90px;
 		z-index: 1;
 	}
 
+	&::before {	
+		top: -25px;
+	}
+
 	&::after {
-		background: url('/assets/img/branch.png') no-repeat;
-		background-size: 100% 100%;
 		transform: scaleY(-1);
-		position: absolute;
-		content: "";
 		bottom: -25px;
-		left: 90px;
-		width: 80px;
-		height: 50px;
-		z-index: 1;
 	}
 
 
