@@ -1,31 +1,6 @@
 ---
 layout: default
 ---
-
-
-<script>
-  $(function(){
-      $(".typer").typed({
-          strings: ["I make things.", "I develop websites.", "I create experiences.", "I build awesome stuff."],
-          typeSpeed: 0,
-          backDelay: 2000,
-          loop: true,
-          showCursor: false
-    });
-    $('nav').removeClass('dark');
-  });
-
-  $(window).scroll(function() {
-    if ($(document).scrollTop() > 10) {
-      $('nav').addClass('dark');
-    } else {
-      $('nav').removeClass('dark');
-    }
-  });
-</script>
-  
-
-
   <div class="container">
     <div class="row commit">
       <div class="node">
@@ -221,3 +196,24 @@ layout: default
       </div>
     </div>
   </div>
+
+  <script>
+    $(function(){
+        $(".typer").typed({
+            strings: ["I make things.", "I develop websites.", "I create experiences.", "I build awesome stuff."],
+            typeSpeed: 0,
+            backDelay: 2000,
+            loop: true,
+            showCursor: false
+      });
+      $('nav').removeClass('dark');
+    });
+
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 10) {
+        $('nav').addClass('dark');
+      } else {
+        $('nav').removeClass('dark');
+      }
+    });
+  </script>
