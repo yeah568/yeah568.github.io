@@ -280,7 +280,7 @@ $red-main: 			#FF7800;
 		// Dirty, dirty hack to get intrinsic width down to < 25%
 		// see https://bugzilla.mozilla.org/show_bug.cgi?id=1086218#c4
 		width: 0;
-		overflow: auto;
+		overflow: hidden;
 		a {
 			max-width: 100%;
 			width: auto;
