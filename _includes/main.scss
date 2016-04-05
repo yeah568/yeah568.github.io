@@ -183,6 +183,12 @@ $red-main: 			#FF7800;
 			border-color: darken($linkedin, 20%);
 			background: $linkedin;
 		}
+
+		.twitter {
+			$twitter: #55acee;
+			border-color: darken($twitter, 20%);
+			background: $twitter;
+		}
 	}
 
 	&:first-child .node::before {
