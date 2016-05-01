@@ -199,6 +199,9 @@ $red-main: 			#FF7800;
 	}
 	.message-contents {
 		flex: 1;
+		.portfolio {
+			padding-left: 0;
+		}
 	}
 
 	h2, h3, h4 {
