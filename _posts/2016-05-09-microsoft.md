@@ -10,6 +10,10 @@ bgcolour: 004185
 bordercolour: 002852
 icon: microsoft.png
 
+gallery:
+  - url: vango.jpg
+    text: Preet Mangat, Senior Program Manager, demos VanGo to Justin Trudeau, Christy Clark, and Gregor Robertson. Photo courtesy of Microsoft Canada Inc.
+
 tech:
 - JavaScript
 - Node.js
@@ -21,6 +25,7 @@ tech:
 - C#
 - Android
 - Xamarin
+- Bing Maps API
 - Git
 - Visual Studio Team Services
 ---
