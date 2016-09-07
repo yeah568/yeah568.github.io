@@ -4,6 +4,7 @@ categories:
 
 bgcolour: CC2036
 bordercolour: 991829
+icon: broadcom.png
 
 short: broadcom
 title: Broadcom
@@ -18,4 +19,5 @@ tech:
 - Git
 ---
 2015-05-04-
+
 In May of 2015, I started my first co-op term as an Application Software Engineer at Broadcom Corporation, located in Richmond, British Columbia.
