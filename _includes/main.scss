@@ -72,6 +72,10 @@ $red-main: 			#FF7800;
 	z-index: -5 !important;
 }
 
+.branch .konami {
+	display: none;
+}
+
 .commit {
 	display: flex;
 	align-items: stretch;

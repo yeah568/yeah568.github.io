@@ -28,6 +28,7 @@
   <!--<script src="http://localhost:35729/livereload.js"></script>-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="/assets/js/typed.min.js"></script>
+  <script src="/assets/js/konami.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="/assets/fancybox/source/jquery.fancybox.pack.js"></script>
   <script type="text/javascript" src="/assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
@@ -39,5 +40,9 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-52723613-1', 'auto');
     ga('send', 'pageview');
+  </script>
+
+  <script>
+    new Konami(function() {$('.konami').css('display', 'flex')});
   </script>
 </head>
