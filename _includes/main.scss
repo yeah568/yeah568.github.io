@@ -121,6 +121,7 @@ $red-main: 			#FF7800;
 		.content {
 			width: auto;
 			position: relative;
+			left: 3px;
 			margin-top: 25px;
 			margin-bottom: 25px;
 			border: $border-width solid;
@@ -230,7 +231,7 @@ $red-main: 			#FF7800;
 		z-index: 1;
 	}
 
-	&::before {	
+	&::before {
 		top: -25px;
 	}
 
@@ -252,14 +253,14 @@ $red-main: 			#FF7800;
         left: 0;
         content: "";
         z-index: 10;
-	}	
+	}
 
 	.commit {
-		
+
 		&:first-child .node::before {
 			top: 25px !important;
 		}
-		
+
 		&:last-child .node::before {
 			bottom: 25px !important;
 		}
@@ -315,7 +316,7 @@ $red-main: 			#FF7800;
 }
 
 .fancybox-nav {
-    width: 60px !important;       
+    width: 60px !important;
 
 	span {
 	    visibility: visible !important;
