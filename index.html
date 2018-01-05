@@ -18,7 +18,7 @@ layout: default
       <div class="node">
         <div class="content center-block blue-border blue-bg">
           <i class="octicon octicon-git-commit"></i>
-        </div>        
+        </div>
       </div><!--
    --><div class="message">
         <h3>About</h3>
@@ -58,6 +58,22 @@ layout: default
           </div>
         </div>
 
+        <div class="row commit konami">
+          <div class="node">
+            <div class="content center-block red-border red-bg">
+              <i class="fa fa-music"></i>
+            </div>
+          </div><!--
+       --><div class="message">
+            <div class="message-contents">
+              <p>
+                1st Place, BronyCAN 2015 Karaoke Contest<br/>
+                Princess of Karaoke (1st Place), Equestrian Idol BABSCon 2017
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div class="row commit">
           <div class="node">
             <div class="content center-block red-border red-bg">
@@ -83,7 +99,7 @@ layout: default
       <div class="node">
         <div class="content center-block blue-border blue-bg">
           <i class="octicon octicon-git-commit"></i>
-        </div>  
+        </div>
       </div><!--
    --><div class="message">
         <h3>Portfolio</h3>
@@ -94,13 +110,13 @@ layout: default
       <div class="row commit">
         <a href="{{ thing.url }}">
           <div class="node">
-          
+
             {% if thing.bgcolour and thing.bordercolour %}
             <div class="content center-block" style="background: #{{thing.bgcolour}}; border-color: #{{thing.bordercolour}}">
             {% else %}
             <div class="content center-block red-border red-bg">
             {% endif %}
-            
+
               {% if thing.icon %}
                 <img src="/assets/img/{{thing.short}}/{{thing.icon}}"/>
               {% elsif thing.faicon %}
@@ -144,7 +160,7 @@ layout: default
       <div class="node">
         <div class="content center-block blue-border blue-bg">
           <i class="octicon octicon-git-commit"></i>
-        </div>  
+        </div>
       </div><!--
    --><div class="message">
         <h3>Contact</h3>
