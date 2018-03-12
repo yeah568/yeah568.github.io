@@ -1,4 +1,6 @@
- --- layout: default ---
+---
+layout: default
+---
 <div class="container">
   <div class="row commit">
     <div class="node">
@@ -22,13 +24,28 @@
       <!--
        -->
       <div class="message">
-        <div class="message-contents konami">
-          Whoa, something went wrong here! Why don't we <a href="/">try this thing again?</a>
+        <div class="message-contents js-konami">
+          Whoa, something went wrong here! Why don't we
+          <a href="/">try this thing again?</a>
         </div>
       </div>
     </div>
-  </div>
 
-  <script>
-    new Konami(function() {$('.konami').text('OOPSIE WOOPSIE!! Uwu We made a fucky wucky!! A wittle fucko boingo! The code monkeys at our headquarters are working VEWY HAWD to fix this!')});
-  </script>
+  </div>
+  <div class="row commit">
+    <div class="node">
+      <div class="content center-block blue-border blue-bg">
+        <i class="octicon octicon-git-commit"></i>
+      </div>
+    </div>
+    <!--
+   -->
+    <div class="message">
+      <h3>Initial commit</h3>
+    </div>
+  </div>
+</div>
+
+<script>
+  new Konami(function () { $('.js-konami').text('OOPSIE WOOPSIE!! Uwu We made a fucky wucky!! A wittle fucko boingo! The code monkeys at our headquarters are working VEWY HAWD to fix this!') });
+</script>
