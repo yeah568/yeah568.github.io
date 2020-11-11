@@ -2,7 +2,7 @@
 categories:
 - work
 
-short: google
+short: googleintern
 title: Google
 desc: Front end development on the Firebase Performance Monitoring team in New York City.
 
